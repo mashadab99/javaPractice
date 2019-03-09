@@ -1,0 +1,10 @@
+In order to implement cloning, we need configure our classes to follow below steps:-
+	1-Implement Cloneable interface in our class or its superclass or interface,
+	2-Define clone() method which should handle CloneNotSupportedException (either throw or log),
+		and in most cases from our clone() method we call the clone() method of the superclass.
+	3-And super.clone() will call its super.clone() and chain will continue until 
+		call will reach to clone() method of the Object class 
+		which will create a field by field mem copy of our object and return it back.
+
+Default equals method checks for references so it should be false. 
+If we want to make it true then we need to override equals method.
