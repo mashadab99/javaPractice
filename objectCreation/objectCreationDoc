@@ -1,0 +1,6 @@
+Different ways to create objects in Java-
+1. Using the new keyword
+2. Using Class.newInstance() method
+3. Using newInstance() method of Constructor class
+4. Using clone() method
+5. Using deserialization
